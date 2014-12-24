@@ -1,0 +1,3 @@
+[submodule "philharnish.com"]
+	path = philharnish.com
+	url = https://github.com/PhilHarnish/philharnish.com.git
