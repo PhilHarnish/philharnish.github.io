@@ -1,0 +1,122 @@
+/* Source available online http://github.com/PhilHarnish/philharnish.com/ */
+html, body, p, div, ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 15pt Garamond, Georgia, "Book Antiqua", "Palatino Linotype", "Book Antiqua", Palatino, Times, serif;
+  background: #fffaee;
+  color: #000000; }
+
+#header, #nav, #content, #footer {
+  width: 600px;
+  margin: 0 auto; }
+
+#header {
+  width: 580px;
+  padding: 10px;
+  background: #1c252d url(moon.jpg) no-repeat 100% 0;
+  color: #ffffff;
+  font: 40px;
+  font-weight: normal; }
+
+#nav {
+  height: 283px;
+  margin: 1em auto;
+  text-align: center;
+  background: #fffaee url(bg.jpg) no-repeat 0 0;
+  color: #000000; }
+  #nav li {
+    width: 200px;
+    float: left;
+    list-style: none;
+    display: inline; }
+    #nav li a {
+      display: block;
+      position: relative;
+      height: 283px;
+      font-size: 40px;
+      text-decoration: none; }
+      #nav li a:hover {
+        background-color: #ffffff;
+        color: #000000; }
+      #nav li a span {
+        width: 200px;
+        display: block;
+        position: absolute;
+        top: 0.8em;
+        text-align: center;
+        background-color: #ffffff;
+        color: #000000; }
+      #nav li a span.location {
+        text-indent: -5000px;
+        top: 0;
+        height: 100%;
+        opacity: 0.3;
+        filter: alpha(opacity=30); }
+
+#content {
+  background: #fffaee url(grass.gif) no-repeat 100% 100%; }
+  #content p {
+    text-align: justify;
+    padding: 0 0 1em 0;
+    position: relative; }
+    #content p em {
+      color: #283e28;
+      font-weight: bold; }
+    #content p abbr {
+      border: none; }
+    #content p a {
+      text-decoration: none;
+      color: #000000; }
+    #content p *[title]:hover .sidenote {
+      display: block; }
+    #content p *[title]:after {
+      content: "*";
+      font: small monospace;
+      vertical-align: top; }
+    #content p:hover *[title]:after {
+      content: "?"; }
+  #content .sidenote {
+    display: none;
+    position: absolute;
+    right: 100%;
+    width: 200px;
+    text-align: right;
+    border-right: 1px solid #000000;
+    padding: 1em;
+    margin: -2.2em 1em 0 0; }
+    #content .sidenote small {
+      font-size: 90%; }
+
+#footer {
+  background: #283e28;
+  color: #ffffff;
+  font-size: small; }
+  #footer:hover a, #footer a:hover {
+    text-decoration: underline; }
+  #footer p {
+    padding: 1em;
+    position: relative; }
+    #footer p#less a#expander {
+      background: #000b00;
+      padding: 0.5em 1em 1em 1em;
+      position: absolute;
+      right: 1em;
+      bottom: 0;
+      -moz-border-radius-topleft: 5px;
+      -webkit-border-top-left-radius: 5px;
+      -moz-border-radius-topright: 5px;
+      -webkit-border-top-right-radius: 5px; }
+    #footer p#more {
+      margin: 0 1em;
+      background: #000b00;
+      color: #fffaee;
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em; }
+      #footer p#more a {
+        background: transparent; }
+    #footer p a {
+      background: #283e28;
+      color: #ffffff;
+      text-decoration: none; }
